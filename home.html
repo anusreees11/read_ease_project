@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReadEase</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page">
+
+  <!-- Floating cute elements -->
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="floating star">
+  <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="floating heart">
+  <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" class="floating flower">
+  <img src="https://cdn-icons-png.flaticon.com/512/2583/2583344.png" class="floating cloud">
+  <img src="https://cdn-icons-png.flaticon.com/512/742/742751.png" class="floating sparkle">
+
+  <!-- Soft background blobs -->
+  <div class="bg-blob blob1"></div>
+  <div class="bg-blob blob2"></div>
+
+  <div class="hero-card">
+    <h1 class="logo">📖 ReadEase</h1>
+    <p class="tagline">Gentle reading support for calm, focused minds</p>
+
+    <button class="primary-btn" onclick="location.href='reader.html'">
+      Start Reading ✨
+    </button>
+
+    <button class="secondary-btn" onclick="resumeReading()">
+      Resume Reading 💫
+    </button>
+  </div>
+
+<script>
+function resumeReading() {
+  const savedText = localStorage.getItem("savedText");
+  if(savedText){
+    location.href = "reader.html";
+  } else {
+    alert("No saved session yet 🌸");
+  }
+}
+</script>
+
+</body>
+</html>

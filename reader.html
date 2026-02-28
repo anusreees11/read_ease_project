@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReadEase — Reader</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="reader-page">
+
+  <!-- Floating aesthetic figures -->
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="floating star">
+  <img src="https://cdn-icons-png.flaticon.com/512/869/869869.png" class="floating heart">
+  <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" class="floating flower">
+
+  <div class="reader-card">
+
+    <header>
+      <h1 class="logo-small">ReadEase</h1>
+      <p class="tagline">Focus. Breathe. Read comfortably.</p>
+    </header>
+
+    <textarea id="inputText" placeholder="Paste text here..."></textarea>
+
+    <div class="button-panel">
+      <button onclick="convertText()">Make Easy</button>
+      <button onclick="startSpeech()">▶ Read</button>
+      <button onclick="pauseSpeech()">⏸ Pause</button>
+      <button onclick="resumeSpeech()">⏵ Resume</button>
+      
+    </div>
+
+    <div class="control-panel">
+      <label>Reading Speed</label>
+      <input type="range" id="speedControl" min="0.5" max="1.2" step="0.05" value="0.75">
+      
+    </div>
+
+    <div id="outputBox"></div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

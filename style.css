@@ -1,0 +1,558 @@
+/* GLOBAL */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 40px;
+  background: linear-gradient(to bottom, #f7f8ff, #ffffff);
+  color: #333;
+  
+  border: 10px solid pink !important;
+
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+.home-page {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5, #ffffff);
+  font-family: 'Inter', sans-serif;
+
+  overflow: hidden;
+
+  position: relative;   /* ⭐ IMPORTANT */
+}
+
+.hero-card {
+  position: relative;
+  z-index: 3;
+}
+.hero-card {
+  background: white;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0px 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  max-width: 520px;
+}
+
+.hero-card h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #4a90e2;
+}
+
+.hero-card p {
+  font-size: 18px;
+  color: #666;
+}
+
+.feature-grid {
+  margin: 30px 0;
+  display: grid;
+  gap: 12px;
+}
+
+.feature {
+  background: #f1f3ff;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.primary-btn {
+  background: #4a90e2;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(74,144,226,0.3);
+}
+
+/* =========================
+   READER PAGE
+========================= */
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 52px;
+  color: #4a90e2;
+}
+
+header p {
+  color: #666;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 14px;
+  border: 2px solid #dbe4ff;
+  line-height: 1.8;
+  word-spacing: 4px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+textarea:focus {
+  border: 2px solid #4a90e2;
+}
+
+/* BUTTONS */
+
+.button-panel {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button {
+  background: #4a90e2;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* SPEED CONTROL */
+
+.control-panel {
+  text-align: center;
+  margin: 20px 0;
+}
+
+input[type="range"] {
+  width: 220px;
+}
+
+/* OUTPUT READING AREA */
+
+#outputBox {
+  margin-top: 25px;
+  padding: 35px;
+  border-radius: 16px;
+  background: #fffbe6;
+  font-size: 22px;
+  line-height: 2;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  min-height: 200px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+}
+
+/* WORD STYLE */
+.word {
+  transition: all 0.25s ease;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: #444;
+}
+
+
+/* BOLD FOCUS STYLE */
+.active-word {
+  background: #fff3b0;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.15em;
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.active-word {
+  background: #ffe066;
+}
+
+/* 🔥 CURRENTLY READ WORD */
+
+.active-word {
+  background: #ffe066;
+  transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .hero-card {
+    padding: 35px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  textarea {
+    font-size: 18px;
+  }
+
+  #outputBox {
+    font-size: 20px;
+    padding: 25px;
+  }
+}
+#outputBox {
+  word-spacing: 8px;
+  letter-spacing: 0.5px;
+}
+/* ===== PINK PINTEREST HOME PAGE ===== */
+
+.home-page {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5, #ffffff);
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* Glass aesthetic card */
+.hero-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  padding: 70px 80px;
+  border-radius: 30px;
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px rgba(255, 182, 193, 0.3),
+    0 5px 15px rgba(0,0,0,0.05);
+
+  animation: fadeIn 0.9s ease;
+}
+
+/* BIG BEAUTIFUL TITLE */
+.logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 78px;
+  margin: 0;
+  color: #ff5c8a;
+  letter-spacing: 2px;
+}
+
+/* Soft subtitle */
+.tagline {
+  margin: 20px 0 40px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Cute button */
+.primary-btn {
+  background: linear-gradient(135deg, #ff7aa2, #ffb6c1);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 16px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 122, 162, 0.4);
+}
+
+/* Floating cute icons */
+.floating {
+  position: absolute;
+  width: 70px;
+  opacity: 0.7;
+  animation: float 6s infinite ease-in-out;
+}
+
+.star { top: 12%; left: 10%; }
+.heart { bottom: 12%; right: 12%; }
+.flower { top: 20%; right: 18%; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+/* ===== READER PAGE PINK THEME ===== */
+
+.reader-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5, #ffffff);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glass reading container */
+.reader-card {
+  max-width: 900px;
+  margin: auto;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+
+  padding: 40px;
+  border-radius: 25px;
+
+  box-shadow:
+    0 15px 40px rgba(255, 182, 193, 0.3),
+    0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Title style */
+.logo-small {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 48px;
+  color: #ff5c8a;
+  margin: 0;
+}
+
+.tagline {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Textarea soft style */
+textarea {
+  width: 100%;
+  min-height: 180px;
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 14px;
+  border: 2px solid #ffd6e7;
+  line-height: 1.8;
+  word-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #ff7aa2, #ffb6c1);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 122, 162, 0.4);
+}
+
+/* Reading output */
+#outputBox {
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 14px;
+  background: #fff7fb;
+
+  font-size: 22px;
+  line-height: 2.1;
+  letter-spacing: 1px;
+  word-spacing: 8px;
+
+  min-height: 200px;
+}
+
+/* Active reading word */
+.active-word {
+  font-weight: bold;
+  color: #ff4f7b;
+  background: #ffe1ec;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+/* Floating figures (shared with home) */
+.floating {
+  position: absolute;
+  width: 70px;
+  opacity: 0.7;
+  animation: float 6s infinite ease-in-out;
+}
+
+.star { top: 8%; left: 8%; }
+.heart { bottom: 8%; right: 10%; }
+.flower { top: 15%; right: 18%; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+/* ===== MORE FLOATING ELEMENTS ===== */
+
+.cloud { top: 70%; left: 12%; width: 90px; animation-duration: 9s; }
+.sparkle { top: 35%; left: 85%; width: 50px; animation-duration: 7s; }
+.star2 { bottom: 25%; left: 30%; width: 60px; animation-duration: 8s; }
+
+/* ===== SOFT BACKGROUND BLOBS ===== */
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.45;
+  z-index: 0;     /* ⭐ behind content */
+}
+
+.blob1 {
+  width: 320px;
+  height: 320px;
+  background: #ffb6c1;
+  top: 10%;
+  left: 15%;
+}
+
+.blob2 {
+  width: 260px;
+  height: 260px;
+  background: #ffd6e7;
+  bottom: 10%;
+  right: 15%;
+}
+
+.blob1 {
+  width: 300px;
+  height: 300px;
+  background: #ffb6c1;
+  top: 10%;
+  left: 15%;
+}
+
+.blob2 {
+  width: 260px;
+  height: 260px;
+  background: #ffd6e7;
+  bottom: 10%;
+  right: 15%;
+}
+
+/* ===== EXTRA SOFT ANIMATION ===== */
+.floating {
+  position: absolute;
+  width: 70px;
+  opacity: 0.8;
+  z-index: 2;               /* ⭐ show above blobs */
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Positions */
+.star { top: 12%; left: 10%; }
+.heart { bottom: 12%; right: 12%; }
+.flower { top: 20%; right: 18%; }
+.cloud { top: 70%; left: 12%; width: 90px; animation-duration: 9s; }
+.sparkle { top: 35%; left: 85%; width: 50px; animation-duration: 7s; }
+.star2 { bottom: 25%; left: 30%; width: 60px; animation-duration: 8s; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+/* Different speeds = depth illusion */
+.star { animation-duration: 6s; }
+.heart { animation-duration: 8s; }
+.flower { animation-duration: 7s; }
+/* ===== HOME PAGE BACKGROUND ===== */
+.home-page {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5, #ffffff);
+  font-family: 'Roboto', sans-serif;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== HERO CARD ===== */
+.hero-card {
+  background: rgba(255,255,255,0.8);
+  padding: 60px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+  z-index: 2;
+}
+
+/* ===== FLOATING ELEMENTS ===== */
+.floating {
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.7;
+  animation: float 6s infinite ease-in-out;
+}
+
+/* Positions */
+.heart { top: 10%; left: 8%; }
+.star { top: 25%; right: 10%; }
+.sparkle { bottom: 20%; left: 12%; }
+.flower { bottom: 15%; right: 15%; }
+.cloud { top: 70%; left: 45%; }
+
+/* Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Button style */
+.primary-btn {
+  background: linear-gradient(135deg, #ff7aa2, #ffb6c1);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
