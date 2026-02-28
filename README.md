@@ -61,10 +61,10 @@ Key features of ReadEase include:
 ![Homepage](docs/homepage.png)https://github.com/anusreees11/read_ease_project/blob/b55b3f64ba57a68fd8da163b60997700da3598c9/homepage.png
 *The main screen of ReadEase showing the pink aesthetic homepage.*
 
-![Reader Page](docs/reader_page.png)
+![Reader Page](docs/reader_page.png)https://github.com/anusreees11/read_ease_project/blob/70fa0a2ff1615dc766adbfa25e3441a472349f6e/readpage.png
 *Shows text-to-speech with highlighted words for improved focus.*
 
-![Settings](docs/settings.png)
+![Settings](docs/settings.png)https://github.com/anusreees11/read_ease_project/blob/70fa0a2ff1615dc766adbfa25e3441a472349f6e/settings.png
 *Speed control and customization options.*
 *Speed control and customization options.*
 
